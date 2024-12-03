@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-width: 100vh;
+    background-color:linear-gradient( #FFFFFF , #EDEDED , #F2F2F2 , #FAFAFA) ;
+    padding: 10px 8%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 250px;
+    cursor: pointer
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:  #252525;
+    text-decoration: none;
+}
+
+.btn{
+    display: flex;
+    align-items:center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color:#424242 ;
+    color: #ffffff ;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+.btn a:link{
+  background-color: #424242;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.content{
+    margin-top: 14%;
+    color: #424242;
+    max-width: 620px;
+
+}
+.contet h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+ 
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    border: 2px solid #131313;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  /* footer*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.c1{
+	max-width: 100%;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #010101;
+    padding: 70px 0;
+    max-width: 100%;
+    
+}
+.footer-col{
+   width: 25%;
+   padding: 0 55px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #b5b5b5;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col p{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col p:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(247, 237, 237, 0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fffcfc;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/*icon page*/
+.about{
+  margin: 120px;
+  padding: 20px;
+  font-size: larger;
+}
+.a1{
+  margin-bottom: -80px;
+  text-align: center;
+}
+
+/*rental page*/
+.b1{
+  text-align: center;
+  margin-bottom: -80px;
+}
+.r1{
+  margin: 120px;
+  font-size: larger;
+  padding: 20px;
+}
+.icon{
+  text-align: center;
+ font-size: 30px;
+}
+.android{
+  width: 240px;
+  height: auto;
+}
+.apple{
+  width: 226px;
+  height: auto;
+}
+
+.footer2{
+  background-color: #ebe8e8;
+  border-radius: 50px;
+  margin-top: -60px;
+  margin-bottom: 30px
+}
+/* product*/
+select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: content-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: horizontal;
+  margin-left: 150PX;
+  text-align: center;
+}
+
+option {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 30PX;
+}
+
+.d1{
+  margin-left: 130px;
+}
+.c2{
+  font-size: larger;
+  padding: 20px;
+  margin-left: 150px;
+  margin-right: 100px;
+}
+/* specification table  */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  border: 1px solid #ddd;
+  margin-left: 170px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* Style table headers and table data */
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+/* Zebra-striped table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.fa-check {
+  color: rgb(186, 186, 186);
+}
+
+.fa-remove {
+  color: red;
+}
+
+/* buy now button  */
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  background-color: #252525;
+  color: #FFFFFF;
+  border: 2px solid;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 680px;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #131313;
+}
+
+.b2{
+  
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.sst{
+  margin-left: 160px;
+  border: 2px solid #131313;
+}
+
+.cc2{
+  font-size: larger;
+  padding: 20px;
+  margin-left: 150px;
+  margin-right: 100px;
+}
+.cc2-h4{
+    font-size: larger;
+    margin-left: 150px;
+}
